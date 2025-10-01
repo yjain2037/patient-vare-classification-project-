@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 st.header("Patient Care Classification System")
 
 # Load the trained Random Forest model from the pickle file
-with open("C:/Users/HP/OneDrive/Desktop/Jupyter/project 2 main/random_forest_model.pkl", "rb") as model_file:
+with open("random_forest_model.pkl", "rb") as model_file:
     rf_model = pickle.load(model_file)
 
 # User input
@@ -67,4 +67,5 @@ else:
     care = "In Care (Hospitalization) Required"
 
 # Display the result
+
 st.subheader("Action to Take")
